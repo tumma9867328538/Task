@@ -90,6 +90,11 @@ public class MainActivity extends AppCompatActivity implements CalenderPickDate,
         intView();
         onClickListener = (OnClickListener_) this;
 
+        Calendar c = Calendar.getInstance();
+        yearSelected = c.get(Calendar.YEAR);
+        monthSelected = c.get(Calendar.MONTH);
+
+
         //Observe Task add
 
         try {

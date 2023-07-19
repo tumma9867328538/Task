@@ -92,8 +92,10 @@ public class MainActivity extends AppCompatActivity implements CalenderPickDate,
 
         Calendar c = Calendar.getInstance();
         yearSelected = c.get(Calendar.YEAR);
-        monthSelected = c.get(Calendar.MONTH);
+        monthSelected = c.get(Calendar.MONTH)+1;
 
+        Log.e( "onCreate: ", String.valueOf(monthSelected));
+        prepareCalendarData();
 
         //Observe Task add
 
